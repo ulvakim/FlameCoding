@@ -46,6 +46,18 @@ public class CacheConfiguration {
             cm.createCache(com.flamecoding.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.flamecoding.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.flamecoding.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Country.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Location.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Department.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Job.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(com.flamecoding.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
